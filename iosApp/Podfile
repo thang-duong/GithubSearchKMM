@@ -1,0 +1,11 @@
+ENV['SWIFT_VERSION'] = '5'
+
+target 'iosApp' do
+  use_frameworks!
+  platform :ios, '14.1'
+
+  pod 'shared', :path => '../shared'
+  pod 'sharedSwift', :path => '../shared'
+
+  pod 'Kingfisher', '~> 7.0'
+end
